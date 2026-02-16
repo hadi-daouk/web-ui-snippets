@@ -1,0 +1,65 @@
+/* Body background color */
+body {
+    background-color: navy;
+  }
+  
+
+  .code-table {
+    max-height: 60vh;
+    width: 100%; 
+    margin: auto; 
+    border-collapse: collapse;
+    table-layout: fixed;
+
+ 
+  }
+  
+  .code-table th, .code-table td {
+    border: 1px solid grey; 
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  
+  .header-html {
+    background-color: #ccc; 
+  }
+  
+
+  .header-css {
+    background-color: #ccc; 
+  }
+  
+  
+  .header-js {
+    background-color: #ccc; 
+  }
+
+  .code-section {
+    max-height: 50vh;
+    overflow-y: auto;
+    border: 1px solid grey; 
+    padding: 8px;
+    background-color: #050a1c; 
+    font-family: monospace;
+    white-space: pre-wrap;
+    color: orange;
+  }
+  
+  .copy-button {
+    margin-left: 10px;
+    background-color: orange;
+    color: white; 
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 6px 12px;
+  }
+  
+
+  .copy-button:hover {
+    background-color: darkorange;   
+  }
+  

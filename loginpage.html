@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script>
+        window.onload = function() {
+            // Get error parameter from URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+            
+            // Display popup message based on error parameter
+            if (error === 'incorrect_credentials') {
+                document.getElementById('username').insertAdjacentHTML('afterend', '<div class="error-message"  style="color: rgb(241, 0, 0); font-size: 12px;  margin-bottom:10% left: 0;">Incorrect username or password or not registered. Please try again.</div>');
+            } 
+        };
+    </script>
+</head>
+<body>
+<div class="ring">
+  <i style="--clr:#00ff0a;"></i>
+  <i style="--clr:#ff0057;"></i>
+  <i style="--clr:#fffd44;"></i>
+  <div class="login">
+    <h2>Login</h2>
+    <form action="loginpage.php" id="login" method="post">
+      <div class="inputBx">
+        <input type="text" placeholder="Username" name="username" id="username" style="margin-bottom: 15px;">
+      </div>
+      <div class="inputBx">
+        <input type="password" placeholder="Password" name="password" id="password">
+      </div>
+      <div class="inputBx">
+        <input type="submit" value="Login" name="login">
+      </div>
+    </form>
+    <div class="links">
+      <a href="construction.html">Forget Password</a>
+      <a href="register.php">Signup</a>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>
